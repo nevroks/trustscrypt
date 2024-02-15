@@ -1,0 +1,17 @@
+.about__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
+.about__container-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 578px;
+}
+
+.about__container-text button {
+    width: 168px;
+}
