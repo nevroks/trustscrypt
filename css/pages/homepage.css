@@ -15,3 +15,115 @@
 .about__container-text button {
     width: 168px;
 }
+
+.slider1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider1-slider {
+    width: 681px;
+}
+
+.slider1-dots {
+    display: flex;
+    column-gap: 18px;
+}
+
+.slider1-dots li {
+    width: 121.21px !important;
+    height: 3px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 100px !important;
+    cursor: pointer;
+}
+
+.slider1-dots button {
+    visibility: hidden;
+}
+
+.slider1-dots li.slick-active {
+    background-color: var(--accent-color) !important;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 160px 0;
+}
+
+.tools p {
+    max-width: 762px;
+    margin: 32px 0 64px;
+}
+
+.tools__img-container {
+    display: flex;
+    column-gap: 64px;
+}
+
+.ourProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ourProducts p {
+    max-width: 689px;
+    margin: 32px 0 64px;
+}
+
+.ourProducts__poducts {
+    display: flex;
+    column-gap: 32px;
+}
+
+.ourProducts__poducts-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: 260px;
+    background-image: url("./../../assets/cardFrame.png");
+    transition: all 0.4s;
+    border-radius: 18px;
+}
+
+.ourProducts__poducts-item:hover {
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+.ourProducts__poducts-item .ourProducts__poducts-item__img-wrapper {
+    bottom: -30px;
+    transition: all 0.4s;
+}
+
+.ourProducts__poducts-item:hover .ourProducts__poducts-item__img-wrapper {
+    bottom: -10px;
+}
+
+.ourProducts__poducts-item:hover p {
+    bottom: -10px;
+}
+
+.ourProducts__poducts-item__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.ourProducts__poducts-item p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    max-width: 316px;
+    bottom: -30px;
+    transition: all 0.4s;
+}
