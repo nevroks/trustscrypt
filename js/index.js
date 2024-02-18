@@ -1,4 +1,5 @@
 jQuery(function() {
+    //slider for homepage
     $('.slider1-slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,
@@ -14,5 +15,39 @@ jQuery(function() {
 
 
     });
+    //filter for products page
 
+    let filter = $("[data-filter]");
+
+    filter.on("click", function(e) {
+        let category = $(this).data('filter');
+
+        // $("[data-filter]").forEach(() => { $(this).removeClass("active") })
+        // $(this).addClass("active")
+
+        if (category == "all") {
+            $("[data-category]").removeClass("hidden")
+        } else {
+            $("[data-category]").each(function() {
+
+                let chosenCategory = $(this).data('category')
+
+                if (chosenCategory !== category) {
+                    $(this).addClass("hidden")
+                } else {
+                    $(this).removeClass("hidden")
+                }
+            })
+        }
+    })
+    $('.products__filter-slider').slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        dotsClass: "slider2-dots",
+        vertical: true,
+        verticalSwiping: true
+    });
 });
