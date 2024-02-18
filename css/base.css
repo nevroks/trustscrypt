@@ -2,6 +2,7 @@
     --white-color: rgb(236, 241, 240);
     --accent-color: rgb(15, 174, 150);
     --text-color: rgb(212, 212, 212);
+    --black-color: rgb(17, 1, 30);
 }
 
 * {
@@ -26,6 +27,12 @@ h2 {
     font-size: 34px;
     font-weight: 700;
     line-height: 41px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
 }
 
 body * {
@@ -154,6 +161,10 @@ body::after {
     background: rgb(2, 116, 99);
     position: relative;
     bottom: -3px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .header nav {
