@@ -15,31 +15,31 @@ jQuery(function() {
 
 
     });
-    //filter for products page
-
+    // filter
     let filter = $("[data-filter]");
 
     filter.on("click", function(e) {
-        let category = $(this).data('filter');
+            let category = $(this).data('filter');
 
-        // $("[data-filter]").forEach(() => { $(this).removeClass("active") })
-        // $(this).addClass("active")
+            // $("[data-filter]").forEach(() => { $(this).removeClass("active") })
+            // $(this).addClass("active")
 
-        if (category == "all") {
-            $("[data-category]").removeClass("hidden")
-        } else {
-            $("[data-category]").each(function() {
+            if (category == "all") {
+                $("[data-category]").removeClass("hidden")
+            } else {
+                $("[data-category]").each(function() {
 
-                let chosenCategory = $(this).data('category')
+                    let chosenCategory = $(this).data('category')
 
-                if (chosenCategory !== category) {
-                    $(this).addClass("hidden")
-                } else {
-                    $(this).removeClass("hidden")
-                }
-            })
-        }
-    })
+                    if (chosenCategory !== category) {
+                        $(this).addClass("hidden")
+                    } else {
+                        $(this).removeClass("hidden")
+                    }
+                })
+            }
+        })
+        //slider for products page
     $('.products__filter-slider').slick({
         dots: true,
         speed: 300,
@@ -47,6 +47,17 @@ jQuery(function() {
         adaptiveHeight: true,
         arrows: false,
         dotsClass: "slider2-dots",
+        vertical: true,
+        verticalSwiping: true
+    });
+    //slider for blog page
+    $('.lastEvents__filter-slider').slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        dotsClass: "slider3-dots",
         vertical: true,
         verticalSwiping: true
     });
