@@ -80,6 +80,42 @@ body::after {
     transition: all 0.4s;
 }
 
+.button__filled:hover {
+    color: rgb(249, 249, 249);
+    background: rgb(5, 143, 123);
+}
+
+.button__filled:active {
+    color: rgb(223, 223, 223);
+    background: rgb(2, 116, 99);
+    position: relative;
+    bottom: -3px;
+}
+
+.button__outlined {
+    color: var(--accent-color);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(15, 174, 150);
+    transition: all 0.4s;
+}
+
+.button__outlined:hover {
+    color: rgb(249, 249, 249);
+    background: rgb(5, 143, 123);
+}
+
+.button__outlined:active {
+    color: rgb(223, 223, 223);
+    background: rgb(2, 116, 99);
+    position: relative;
+    bottom: -3px;
+}
+
 .switch {
     position: relative;
     display: flex;
@@ -156,18 +192,6 @@ body::after {
 
 .slider.round:before {
     border-radius: 100%;
-}
-
-.button__filled:hover {
-    color: rgb(249, 249, 249);
-    background: rgb(5, 143, 123);
-}
-
-.button__filled:active {
-    color: rgb(223, 223, 223);
-    background: rgb(2, 116, 99);
-    position: relative;
-    bottom: -3px;
 }
 
 .hidden {
