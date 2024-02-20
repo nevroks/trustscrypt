@@ -21,8 +21,6 @@ jQuery(function() {
     filter.on("click", function(e) {
             let category = $(this).data('filter');
 
-            // $("[data-filter]").forEach(() => { $(this).removeClass("active") })
-            // $(this).addClass("active")
 
             if (category == "all") {
                 $("[data-category]").removeClass("hidden")
@@ -61,4 +59,35 @@ jQuery(function() {
         vertical: true,
         verticalSwiping: true
     });
+    //slider for single product page
+    $('.product__slider-current').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product__slider-nav'
+    });
+    $('.product__slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product__slider-current',
+        centerMode: true,
+        focusOnSelect: true,
+
+    });
+    $('.product__slider__next').on("click", function() {
+        $('.product__slider-nav').slick("slickNext");
+        $('.product__slider-current').slick("slickNext");
+    })
+    $('.product__slider__prev').on("click", function() {
+        $('.product__slider-nav').slick("slickPrev");
+        $('.product__slider-current').slick("slickPrev");
+    })
+
+    //More button for single product page
+    $(".product__description-button").on("click", function() {
+        $(".product__description-button").toggleClass("hidden")
+        $(".product__description--hidden__text").toggleClass("hidden")
+    })
+
 });
