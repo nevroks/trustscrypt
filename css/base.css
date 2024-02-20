@@ -54,6 +54,13 @@ body::after {
     background-image: url("./../assets/BgImg.png");
 }
 
+.text-light {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
 .text-medium {
     color: var(--text-color);
     font-size: 24px;
