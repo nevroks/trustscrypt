@@ -36,7 +36,6 @@ h4 {
 }
 
 body * {
-    position: relative;
     z-index: 1;
 }
 
@@ -196,6 +195,25 @@ body::after {
 
 .hidden {
     display: none !important;
+}
+
+.pop-Up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.pop-Up__content {
+    background-color: white;
+    padding: 20px 40px;
+    width: fit-content;
 }
 
 .header nav {
