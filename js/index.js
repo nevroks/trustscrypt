@@ -90,4 +90,21 @@ jQuery(function() {
         $(".product__description--hidden__text").toggleClass("hidden")
     })
 
+    //PopUp script
+    $(".share-btn").on("click", function() {
+        $(".pop-Up").removeClass("hidden")
+        document.body.style.overflowY = "hidden"
+        document.body.style.paddingRight = "15px"
+    })
+    $(".pop-Up").on("click", function() {
+        $(".pop-Up").addClass("hidden")
+        document.body.style.overflowY = "visible"
+        document.body.style.paddingRight = "0px"
+    })
+    $(".pop-Up__content").on("click", function(e) {
+        e.stopPropagination()
+    })
+
+
+
 });
