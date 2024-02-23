@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Trustcrypt</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=78d6673e-da8f-488b-a5bc-194cc92db72b&lang=ru_RU"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img src="./../assets/Logo.png" alt="">
+            <div class="header__content">
+                <ul class="header__link-list">
+                    <li>
+                        <a href="./../index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="">Продукты</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./blogPage.html">Блог</a>
+                    </li>
+                    <li>
+                        <a href="./contactsPage.html">Контакты</a>
+                    </li>
+                </ul>
+                <div></div>
+                <div class="header__content--img-container">
+                    <a href=""><img src="./../assets/socials/telegram.svg" alt=""></a>
+                    <a href=""><img src="./../assets/socials/twitter.svg" alt=""></a>
+                    <a href=""><img src="./../assets/socials/youtube.svg" alt=""></a>
+                    <a href=""><img src="./../assets/socials/whatsup.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="blogContent">
+            <div class="blogContent__first">
+                <h2>Что такое кодинг и зачем нужны тестировщики?</h2>
+                <div class="blogContent__first-statistic">
+                    <div>
+                        <img src="./../assets/eyeIco.svg" alt="">
+                        <p>24,390</p>
+                    </div>
+                    <div>
+                        <img src="./../assets/calendarIco.svg" alt="">
+                        <p>Дата публикации: 13 Апреля, 2022</p>
+                    </div>
+                    <button class="share-btn"><img src="./../assets/shareIco.svg" alt=""></button>
+                </div>
+                <div class="pop-Up hidden">
+                    <div class="pop-Up__content">
+                        <button data-sharer="twitter" data-title="Checkout this" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/"><img src="./../assets/socials/twitter.svg" alt=""></button>
+                        <button data-sharer="whatsapp" data-title="Checkout this" data-url="https://ellisonleao.github.io/sharer.js/"><img src="./../assets/socials/whatsup.svg" alt=""></button>
+                        <button data-sharer="telegram" data-title="Checkout this" data-url="https://ellisonleao.github.io/sharer.js/"><img src="./../assets/socials/telegram.svg" alt=""></button>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <!-- classes from blog page -->
+                    <div class="lastEvents__filter--list__item-theme">
+                        <img src="./../assets/blogIcons/developmentIco.svg" alt="">
+                        <p>Разработка</p>
+                    </div>
+                    <!-- classes from blog page -->
+                    <img src="./../assets/blogImgs/blogImgMain.png" alt="">
+                </div>
+                <p class="text-light">
+                    Нашу жизнь невозможно представить без компьютеров, смартфонов, а значит и нужного для их работы ПО. Всего этого не было бы без кодинга. Хотя это не новый термин, но люди всё еще плохо понимают, что он означает.
+                    <br> <br> Издание Business Insider опубликовало краткое руководство по кодингу. Мы подготовили адаптированный перевод материала.
+                </p>
+                <h4>Что такое кодинг</h4>
+                <p class="text-light">
+                    Кодинг — это процесс написания программного кода или скрипта для выполнения определенного алгоритма. Этим занимаются кодеры. Считается, что для выполнения такой работы нужна хотя бы степень бакалавра. Многие кодеры — самоучки. Некоторые начинают с более
+                    скромной двухлетней программы и доучиваются уже на работе.
+                </p>
+                <img src="./../assets/blogImgs/blogImgSecond.png" alt="">
+                <h4>Как пишут скрипт с компьютерной инструкцией</h4>
+                <p class="text-light">
+                    Инструкции обычно пишут на языке программирования высокого уровня. Среди них — C++, Basic, Python, Fortran. Их называют «языки», потому что они включают рудименты английского языка и относительно понятны людям.
+                    <br> <br> Код содержит утверждения и команды, которые после некоторой тренировки можно прочитать и понять. Одним из самых ярких примеров простого кода является простая команда «print ‘Hello, world!’».
+                    <br><br> Даже без дополнительного обучения ясно, что кодер хочет напечатать фразу «Hello, world!». Нюанс в том, что нужно дополнительно указать назначение. Например, напечатать на экране или на бумаге принтера. Кодинг позволяет создавать
+                    сложные программы с сотнями тысяч строк кода. В процессе нужно следить за синтаксисом, чтобы компьютер понимал код и выполнял его без ошибок.
+                </p>
+            </div>
+            <div class="blogContent__second">
+                <h2>Популярные статьи</h2>
+                <div class="blogContent__second-item">
+                    <div class="blogContent__second-item__img-container">
+                        <div class="blogContent__second-item__img-container__theme">
+                            <img src="./../assets/blogIcons/gamingIco.svg" alt="">
+                            <p>Гейминг</p>
+                        </div>
+                        <img src="./../assets/gamindImg.png" alt="">
+                        <div class="blogContent__second-item__img-container__views">
+                            <img src="./../assets/eyeIco.svg" alt="">
+                            <p>24K</p>
+                        </div>
+                    </div>
+                    <div class="blogContent__second-item__text-container">
+                        <h4>Следующая часть Mass Effect перешла в ранню...</h4>
+                        <p class="text-light">Студия BioWare поделилась прогрессом создания следующей игры из серии Mass Effect...</p>
+                        <button class="button__outlined">Просмотреть</button>
+                    </div>
+                </div>
+                <div class="blogContent__second-item">
+                    <div class="blogContent__second-item__img-container">
+                        <div class="blogContent__second-item__img-container__theme">
+                            <img src="./../assets/blogIcons/fishingIco.svg" alt="">
+                            <p>Фишинг</p>
+                        </div>
+                        <img src="./../assets/fishingImg.png" alt="">
+                        <div class="blogContent__second-item__img-container__views">
+                            <img src="./../assets/eyeIco.svg" alt="">
+                            <p>24K</p>
+                        </div>
+                    </div>
+                    <div class="blogContent__second-item__text-container">
+                        <h4>Что такое фишинг и как от него защититься?</h4>
+                        <p class="text-light">Первые фишинговые атаки появились в конце прошлого века, а сейчас, по оценкам Google, жертвами фишига...</p>
+                        <button class="button__outlined">Просмотреть</button>
+                    </div>
+                </div>
+                <div class="blogContent__second-item">
+                    <div class="blogContent__second-item__img-container">
+                        <div class="blogContent__second-item__img-container__theme">
+                            <img src="./../assets/blogIcons/securityIco.svg" alt="">
+                            <p>Безопасность</p>
+                        </div>
+                        <img src="./../assets/securityImg.png" alt="">
+                        <div class="blogContent__second-item__img-container__views">
+                            <img src="./../assets/eyeIco.svg" alt="">
+                            <p>24K</p>
+                        </div>
+                    </div>
+                    <div class="blogContent__second-item__text-container">
+                        <h4>Что такое кибербезопасность?</h4>
+                        <p class="text-light">Кибербезопасность (ее иногда называют компьютерной безопасностью) – это совокупность...</p>
+                        <button class="button__outlined">Просмотреть</button>
+                    </div>
+                </div>
+                <div class="blogContent__second-add">
+                    <a href="https://ekaterinburg.hh.ru/resume/f9813ba9ff0c7b41770039ed1f4a4567356b56"><img src="./../assets/add.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2022 LLC Trustcrypt. All rights reserved.</p>
+    </footer>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
