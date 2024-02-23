@@ -211,7 +211,7 @@ body::after {
 }
 
 .pop-Up__content {
-    background-color: white;
+    background-color: var(--accent-color);
     padding: 20px 40px;
     width: fit-content;
 }
