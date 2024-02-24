@@ -96,3 +96,39 @@
     row-gap: 16px;
     max-width: 325px;
 }
+
+.blogContent__first--slider {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media (max-width:1350px) {
+    .blogContent__second {
+        display: none;
+    }
+    .blogContent {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .blogContent__first--slider {
+        display: inline-block;
+    }
+    .blogContent__second-item__img-container img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:750px) {
+    .blogContent__first-statistic div {
+        column-gap: 5px;
+    }
+}
+
+@media (max-width:500px) {
+    .blogContent__first-statistic {
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+}
