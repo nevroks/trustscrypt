@@ -97,3 +97,25 @@
 .related-products__list-item__text-container p {
     margin: 16px 0;
 }
+
+@media (max-width:1350px) {
+    .products__filter--list__item {
+        width: 300px;
+    }
+}
+
+@media (max-width:1150px) {
+    .products__filter--list__item {
+        width: 250px;
+    }
+}
+
+@media (max-width:950px) {
+    .products__filter--list__item {
+        width: 200px;
+    }
+}
+
+@media (max-width:750px) {}
+
+@media (max-width:500px) {}

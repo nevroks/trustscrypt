@@ -129,3 +129,29 @@
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.37) !important;
 }
+
+@media (max-width:1350px) {
+    .products__filter--list__item {
+        width: 300px;
+    }
+}
+
+@media (max-width:1150px) {
+    .products__filter--list__item {
+        width: 250px;
+    }
+}
+
+@media (max-width:950px) {
+    .products__filter--list__item {
+        width: 200px;
+    }
+}
+
+@media (max-width:750px) {
+    .products__filter {
+        display: none!important;
+    }
+}
+
+@media (max-width:500px) {}

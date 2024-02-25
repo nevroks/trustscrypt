@@ -118,11 +118,17 @@
         width: auto;
         height: auto;
     }
+    .blogContent__first--slider-slider {
+        width: 750px;
+    }
 }
 
 @media (max-width:750px) {
     .blogContent__first-statistic div {
         column-gap: 5px;
+    }
+    .blogContent__first--slider-slider {
+        width: 500px;
     }
 }
 
@@ -130,5 +136,13 @@
     .blogContent__first-statistic {
         flex-direction: column-reverse;
         row-gap: 10px;
+    }
+    .blogContent__first--slider-slider {
+        width: 320px;
+    }
+    .blogContent__second-item__img-container,
+    .slider--img {
+        width: 181px;
+        height: 137px;
     }
 }
