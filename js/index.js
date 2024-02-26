@@ -162,4 +162,29 @@ jQuery(function() {
         slidesToScroll: 1,
         initialSlide: 1
     })
+    $('.lastEvents__filter-categories.mob').slick({
+        infinite: true,
+        slidesToShow: 3.9,
+        arrows: false,
+        slidesToScroll: 1,
+    })
+    $('.lastEvents__filter-slider__mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 3,
+        slidesPerRow: 1,
+        arrows: false,
+        dots: true,
+        dotsClass: "slider3-dots-mob",
+
+    })
+    $('.related-products__list.mob').slick({
+        infinite: true,
+        slidesToShow: 1.8,
+        arrows: false,
+        slidesToScroll: 1,
+    })
+
+
 });
