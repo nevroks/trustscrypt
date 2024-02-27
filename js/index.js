@@ -12,6 +12,7 @@ jQuery(function() {
         slidesToShow: 1,
         dotsClass: "slider1-dots",
         appendDots: ".slider1-dots__container",
+        variableWidth: true,
 
 
     });
@@ -105,33 +106,33 @@ jQuery(function() {
         e.stopPropagination()
     })
 
-    // initMap();
+    initMap();
 
-    // async function initMap() {
-    //     // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    //     await ymaps3.ready;
+    async function initMap() {
+        // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+        await ymaps3.ready;
 
-    //     const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+        const { YMap, YMapDefaultSchemeLayer } = ymaps3;
 
-    //     // Иницилиазируем карту
-    //     const map = new YMap(
-    //         // Передаём ссылку на HTMLElement контейнера
-    //         document.getElementById('map'),
+        // Иницилиазируем карту
+        const map = new YMap(
+            // Передаём ссылку на HTMLElement контейнера
+            document.getElementById('map'),
 
-    //         // Передаём параметры инициализации карты
-    //         {
-    //             location: {
-    //                 // Координаты центра карты
-    //                 center: [55.783943, 37.565685],
-    //                 // Уровень масштабирования
-    //                 zoom: 7
-    //             }
-    //         }
-    //     );
+            // Передаём параметры инициализации карты
+            {
+                location: {
+                    // Координаты центра карты
+                    center: [55.783943, 37.565685],
+                    // Уровень масштабирования
+                    zoom: 7
+                }
+            }
+        );
 
-    //     // Добавляем слой для отображения схематической карты
-    //     map.addChild(new YMapDefaultSchemeLayer());
-    // }
+        // Добавляем слой для отображения схематической карты
+        map.addChild(new YMapDefaultSchemeLayer());
+    }
     $(".nav-icon-btn").on('click', function() {
         $(".nav-icon").toggleClass('nav-icon--active')
 

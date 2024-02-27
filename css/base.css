@@ -403,6 +403,11 @@ body::after {
         width: 146px;
         height: 38px;
     }
+    .text-medium {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 21px;
+    }
     h2 {
         font-size: 30px;
         line-height: 35px;
@@ -445,6 +450,11 @@ body::after {
         font-size: 10px;
         font-weight: 500;
         line-height: 30px;
+    }
+    .text-medium {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 21px;
     }
 }
 
